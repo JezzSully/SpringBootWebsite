@@ -5,7 +5,7 @@ let pageNo = 1;
 function getAllFilms(){
     console.log("loadingFiles");
     let xmlHttp = new XMLHttpRequest();
-    xmlHttp.open("GET", "http://localhost:8080/api/film", false);
+    xmlHttp.open("GET", "http://192.168.1.115:8080/api/film", false);
     xmlHttp.send(null);
     let jsonString = xmlHttp.responseText;
     films = JSON.parse(jsonString);
